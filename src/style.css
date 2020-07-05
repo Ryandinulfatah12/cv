@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #eaeaea;
+    height: auto;
+}
+
+p {
+    font-size: 18px;
+}
+
+.pdf {
+    padding: 8px;
+    background-color: #fff;
+    color: #17224d;
+    position: absolute;
+    right: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s all ease-out;
+}
+.pdf:hover {
+    -webkit-box-shadow: 5px 4px 31px -7px rgba(0,0,0,0.34);
+    -moz-box-shadow: 5px 4px 31px -7px rgba(0,0,0,0.34);
+    box-shadow: 5px 4px 31px -7px rgba(0,0,0,0.34);
+    transition: 0.5s all ease-in;
+    background-color: #ddd;
+}
+
+.pdf > a {
+    text-decoration: none;
+    color: #17224d;
+}
+
+.card-title {
+    color: #17224d;
+    font-size: 34px;
+}
+.profile {
+    width: 120px;
+    border-radius: 50%;
+}
+.jumbotron {
+    height: 500px;
+    background-color: #17224D;
+}
+.card {
+    background-color: #fffcfc;
+    border-radius: 8px;
+    min-height: 500px;
+    -webkit-box-shadow: 5px 4px 31px -7px rgba(0,0,0,0.34);
+    -moz-box-shadow: 5px 4px 31px -7px rgba(0,0,0,0.34);
+    box-shadow: 5px 4px 31px -7px rgba(0,0,0,0.34);
+}
+.badge {cursor: default;}
+.custom-card {
+    margin-top: -250px;
+}
+
+.progress-bar {
+    background-color: #17224d;
+}
+@media (max-width: 576px) { 
+    main .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+ }

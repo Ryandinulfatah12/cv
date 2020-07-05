@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan Dinul Fatah - Show Off</title>
+    <link rel="stylesheet" href="src/showoff.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+</head>
+<body>
+    <div class="button">
+        <a class="btn" href="index.html">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-left-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M7.854 4.646a.5.5 0 0 1 0 .708L5.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0z"/>
+                <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h6.5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/>
+              </svg> Back
+        </a>
+    </div>
+    <div class="button-right">
+        <a class="btn" href="https://github.com/Ryandinulfatah12?tab=repositories">
+            Github Repo 
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M8.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.793 8 8.146 5.354a.5.5 0 0 1 0-.708z"/>
+                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5H11a.5.5 0 0 1 0 1H4.5A.5.5 0 0 1 4 8z"/>
+              </svg>
+        </a>
+    </div>
+    <h1 class="title">PORTFOLIO</h1>
+    <section class="project_slider" id="project"></section>
+    <h1 class="title">APPRECIATE</h1>
+    <section class="cert_slider" id="sertifikat"></section>
+
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script src="src/showoff.js"></script>
+<script type="text/javascript">
+  function createSlick(){  
+  $(".project_slider").not('.slick-initialized').slick({
+      centerMode: true,
+      autoplay: true,
+      dots: true,
+      infinite: true,
+      slidesToShow: 3,
+      responsive: [{ 
+          breakpoint: 768,
+          settings: {
+              dots: false,
+              arrows: false,
+              infinite: false,
+              slidesToShow: 1,
+              slidesToScroll: 1
+          } 
+      }]
+  });
+
+  $('.cert_slider').slick({
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    speed: 300,
+    slidesToShow: 1,
+    centerMode: true,
+    variableWidth: true
+  });
+
+  }
+  createSlick();
+  //Will not throw error, even if called multiple times.
+  $(window).on( 'resize', createSlick );
+</script>
+</html>
