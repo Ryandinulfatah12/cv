@@ -13,6 +13,7 @@ p {
     font-size: 18px;
 }
 
+
 .pdf {
     padding: 8px;
     background-color: #fff;
@@ -59,6 +60,7 @@ p {
 .badge {cursor: default;}
 .custom-card {
     margin-top: -250px;
+    height: 700px;
 }
 
 .progress-bar {

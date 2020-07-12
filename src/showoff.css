@@ -132,14 +132,13 @@ p {
     color: #fff;
     background-color: #17224d;
     padding: 8px;
+    margin: 8px;
     border-radius: 8px;
     margin-top: 10px;
 }
 
 .button {
-    left: 0;
-    position: absolute;
-    margin-top: 10px;
+    text-align: center;
 }
 .btn {
     border-radius: 8px;
@@ -150,9 +149,9 @@ p {
     color: #17224d;
     font-size: 18px;
 }
-.button-right {
-    right: 0;
-    position: absolute;
-    margin-top: 10px;
 
-}
+@media (max-width: 576px) { 
+    .btn {
+        width: 20px;
+    }
+ }
