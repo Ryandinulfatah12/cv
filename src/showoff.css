@@ -148,6 +148,13 @@ p {
     background-color: #fff;
     color: #17224d;
     font-size: 18px;
+    transition: all 0.4s;
+}
+
+.btn:hover {
+    background-color: #17224d;
+    color: #fff;
+    transition: all 0.4s;
 }
 
 @media (max-width: 576px) { 

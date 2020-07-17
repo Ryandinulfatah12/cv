@@ -39,7 +39,8 @@ p {
 
 .card-title {
     color: #17224d;
-    font-size: 34px;
+    font-size: 28px;
+    font-weight: bold;
 }
 .profile {
     width: 120px;
@@ -48,6 +49,7 @@ p {
 .jumbotron {
     height: 500px;
     background-color: #17224D;
+    border-radius: 0;
 }
 .card {
     background-color: #fffcfc;
