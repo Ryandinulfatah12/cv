@@ -44,6 +44,36 @@ project.forEach((i) => {
     `);
 } )
 
+const experiences = [
+    {
+        img: "src/img/experiences/first.jpg",
+        desc: "Project Freelance Front-end Development",
+        stars: "src/img/stars/first-stars.jpg"
+    }
+];
+experiences.forEach((i) => {
+    $('#experiences').append(`
+    <div>
+        <img class="cert" src="${i.img}">
+        <p class="p-sertifikat">${i.desc}</p>
+        </div>
+    </div>
+    `);
+} )
+
+const feedback = [
+    {
+        img: "src/img/stars/first.jpg"
+    }
+];
+feedback.forEach((i) => {
+    $("#feedback").append(`
+        <div>
+            <img class="cert" src="${i.img}">
+        </div>
+    `);
+})
+
 const sertifikat = [
     {
         image: "src/img/sertifikat/dicoding_web.jpg",

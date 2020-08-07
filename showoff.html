@@ -10,8 +10,12 @@
 </head>
 <body>
     
-    <h1 class="title">PORTFOLIO</h1>
+    <h1 class="title border-bottom">PORTFOLIO</h1>
     <section class="project_slider" id="project"></section>
+    <h1 class="title">WORK EXPERIENCES</h1>
+    <section class="experiences" id="experiences"></section>
+    <h1 class="title">FEEDBACK</h1>
+    <section class="feedback" id="feedback"></section>
     <h1 class="title">APPRECIATE</h1>
     <section class="cert_slider" id="sertifikat"></section>
     <div class="button">
@@ -72,6 +76,33 @@
               slidesToScroll: 1
           } 
       }]
+  });
+
+   $(".experiences").not('.slick-initialized').slick({
+      centerMode: true,
+      autoplay: true,
+      dots: true,
+      infinite: true,
+      slidesToShow: 3,
+      responsive: [{ 
+          breakpoint: 768,
+          settings: {
+              dots: false,
+              arrows: false,
+              infinite: false,
+              slidesToShow: 1,
+              slidesToScroll: 1
+          } 
+      }]
+  });
+
+   $('.feedback').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    centerMode: true,
+    variableWidth: true
   });
 
   }
