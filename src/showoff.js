@@ -47,8 +47,11 @@ project.forEach((i) => {
 const experiences = [
     {
         img: "src/img/experiences/first.jpg",
-        desc: "Project Freelance Front-end Development",
-        stars: "src/img/stars/first-stars.jpg"
+        desc: "Project Freelance Front-end Development"
+    },
+    {
+        img: "src/img/experiences/second.jpg",
+        desc: "Project Freelance Kedua Upwork"
     }
 ];
 experiences.forEach((i) => {
@@ -64,6 +67,9 @@ experiences.forEach((i) => {
 const feedback = [
     {
         img: "src/img/stars/first.jpg"
+    },
+    {
+        img: "src/img/stars/second.jpg"
     }
 ];
 feedback.forEach((i) => {

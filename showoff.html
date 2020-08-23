@@ -26,8 +26,8 @@
               </svg> Back
         </a>
 
-        <a class="btn" href="https://github.com/Ryandinulfatah12?tab=repositories">
-            Github Repo 
+        <a class="btn" href="https://github.com/Ryandinulfatah12">
+            Github 
             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" d="M8.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.793 8 8.146 5.354a.5.5 0 0 1 0-.708z"/>
                 <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5H11a.5.5 0 0 1 0 1H4.5A.5.5 0 0 1 4 8z"/>
@@ -78,8 +78,7 @@
       }]
   });
 
-   $(".experiences").not('.slick-initialized').slick({
-      centerMode: true,
+  $(".experiences").not('.slick-initialized').slick({
       autoplay: true,
       dots: true,
       infinite: true,
@@ -91,18 +90,26 @@
               arrows: false,
               infinite: false,
               slidesToShow: 1,
-              slidesToScroll: 1
+              slidesToScroll: 3
           } 
       }]
   });
 
-   $('.feedback').slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    centerMode: true,
-    variableWidth: true
+  $(".feedback").not('.slick-initialized').slick({
+      autoplay: true,
+      dots: true,
+      infinite: true,
+      slidesToShow: 3,
+      responsive: [{ 
+          breakpoint: 768,
+          settings: {
+              dots: false,
+              arrows: false,
+              infinite: false,
+              slidesToShow: 1,
+              slidesToScroll: 3
+          } 
+      }]
   });
 
   }
